@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Megha</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- aos library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <!-- navbar -->
+    <header>
+      <input type='checkbox' id='toggle' style='display:none;' />
+      <label class='toggle-btn toggle-btn__cross' for='toggle'>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-back">
+      <div class="megha-back" id="top-image">
+    <img src="/images/megha1.png" alt="">
+    <div class="hello" id="hello">
+      <p >Hii There,</p>
+      <p> I am Megha Patel</p>
+  </div>
+  </div>
+   
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js""></script> 
+  <script>
+          $("#top-image").mousemove(function(e) {
+          parallaxIt(e, ".hello", -100);
+          parallaxIt(e, "img", -30);
+        });
+
+        function parallaxIt(e, target, movement) {
+          var $this = $("#top-image");
+          var relX = e.pageX - $this.offset().left;
+          var relY = e.pageY - $this.offset().top;
+
+          TweenMax.to(target, 1, {
+            x: (relX - $this.width() / 2) / $this.width() * movement,
+            y: (relY - $this.height() / 2) / $this.height() * movement
+          });
+        }
+  </script>
+<div class="web-back" id="web-back">
+  <img src="/images/web-back2.png" alt="">
+</div>
+
+<h3 class="subtitle" data-aos="fade-up" data-aos-duration="3000"> WHO ?</h3>
+<div class="para">
+<p data-aos="fade-up" data-aos-duration="3000"> 
+  Designer that codes based in Toronto, ON, Canada. 
+I grew up in India.</p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200"> And studied Computer Programmer course
+in Georgian College, Barrie, ON, Canada. </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400"> I love working on 
+projects that require multidisciplinary skill sets solving complex problems 
+and </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600"> make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+ I have worked for a non-profit organization </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="800">as a Web-designer & Graphic Designer. 
+And for the second Co-op I have worked as Web Developer for DSS Toronto,
+where </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000"> I am still working as Full-Timer. I am specialized in Design and coding. 
+I have extensive experience in visual and interaction design, Design system. I am also a </p> <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1200">
+ Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript 
+and jQuery. 
+
+</p>
+</div>
+<h3 class="subtitle2" data-aos="fade-up" data-aos-duration="3000">WHAT I'M UP TO ?</h3>
+  <div class="up-to">
+    <p data-aos="fade-up" data-aos-duration="3000" >Ceating Beautiful Websites</p>
+    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Innovation of new Graphics</p>
+    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600">Learn new modern Technologies</p>
+    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="900">Travel</p>
+  </div>
+<div class="work-current">
+  <h4 data-aos="fade-up" data-aos-duration="3000"> Currently</h4>
+  <div class="box-1">
+       <div class="square" data-aos="zoom-in-up" data-aos-duration="2000" >
+         <h6>WEB DEVELOPER</h6>
+         <p>Working on projects from clients and
+          Company's website. 
+          Create static websites which are working well 
+          with all size devices and all browsers with 
+          google analytics and great SEO content. 
+          Fixing bugs and troubleshooting problems on 
+          going website.
+          Creating creative graphics using Photoshop, 
+          illustrator, XD, After Effect and many other 
+          Adobe software.
+          </p>
+       </div>
+  </div>
+</div>
+<div class="work-current2">
+  <div class="box-2">
+       <div class="square" data-aos="zoom-in-up" data-aos-duration="2000">
+         <h6>WEB DEVELOPER</h6>
+         <p>Working on projects from clients and
+          Company's website. 
+          Create static websites which are working well 
+          with all size devices and all browsers with 
+          google analytics and great SEO content. 
+          Fixing bugs and troubleshooting problems on 
+          going website.
+          Creating creative graphics using Photoshop, 
+          illustrator, XD, After Effect and many other 
+          Adobe software.
+          </p>
+       </div>
+  </div>
+  <h4 data-aos="fade-up" data-aos-duration="3000">Previously</h4>
+</div>
+
+<h3 class="subtitle2 proud" data-aos="fade-up" data-aos-duration="3000">PROJECTS, I'M PROUD OF</h3>
+<div class="dss">
+<img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" src="/images/job5.png" alt="">
+</div>
+<div class="projects">
+<img data-aos="fade-right" data-aos-duration="3000"  data-aos-delay="300" src="/images/job1.jpg" alt="">
+<img data-aos="fade-left" data-aos-duration="3000"  data-aos-delay="600" src="/images/job2.jpg" alt=""  >
+<img data-aos="fade-right" data-aos-duration="3000"  data-aos-delay="900" src="/images/job3.png" alt="">
+<img data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1200" src="/images/job4.jpg" alt="">
+
+
+</div>
+<div class="out-side-work">
+<h3 class="subtitle2" style="color: grey;">OUTSIDE OF WORK</h3>
+    <div class="interests">
+      <div class="music">
+        <h4>Music</h4>
+      </div>
+      <div class="music">
+        <h4>Photography</h4>
+      </div>
+      <div class="music">
+        <h4>Learning</h4>
+      </div>
+
+    </div>
+    <div class="customer-service">
+      <p>When I am not designing websites, I mainly watching movies or playing guitar, learning, 
+        video games and eating food. I am also working at Loblaws as Team member in café as part timer. 
+        That is best job because I like customer service and I love coffee. 
+        I am also awarded as best employee of the year.</p>
+        <img src="/images/parttime.png" alt="" style="width: 500px;">
+    </div>
+  </div>
+  <h3 class="subtitle2">CONTACT ME</h3>
+  <div class="contact">
+      <div class="details">
+        <p>711 Finch Ave West, Toronto, ON, Canada</p>
+        <p>meghapatel1903@gmail.com</p>
+      </div>
+      <div class="contact-form">
+        <h3>Contact Form</h3>
+        <form action="">
+          <input type="text" placeholder="Your Lucky Name">
+          <input type="email" placeholder="Your Email">
+          <input type="text" placeholder="Your Message!!">
+          <button>SEND !</button>
+        </form>
+      </div>
+</div>
+
+<!-- like button  -->
+<div id="main-content">
+  <h4 style="color: white;"> I </h4>
+
+  <div>
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox">
+      <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+          <path d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" id="heart" fill="#AAB8C2"/>
+          <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+
+          <g id="grp7" opacity="0" transform="translate(7 6)">
+            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+          </g>
+
+          <g id="grp6" opacity="0" transform="translate(0 28)">
+            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+          </g>
+
+          <g id="grp3" opacity="0" transform="translate(52 28)">
+            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+          </g>
+
+          <g id="grp2" opacity="0" transform="translate(44 6)">
+            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+          </g>
+
+          <g id="grp5" opacity="0" transform="translate(14 50)">
+            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+          </g>
+
+          <g id="grp4" opacity="0" transform="translate(35 50)">
+            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+          </g>
+
+          <g id="grp1" opacity="0" transform="translate(24)">
+            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+          </g>
+        </g>
+      </svg>
+    </label>
+  </div>
+  <h4 style="color: white;"> This Website ! </h4>
+  <h4 class="count" style="color: white;"> </h4>
+<script>
+  $('#checkbox').click(function() {
+    $('.count').html(function(i, val) { return val*1+1 });
+});
+</script>
+</div>
+
+</body>
+</html>

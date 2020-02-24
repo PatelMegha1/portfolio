@@ -1,0 +1,532 @@
+body {
+  background-color: black;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+
+
+
+ header nav {
+	 background-color: #9B9B9B;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 opacity: 0;
+	 visibility: hidden;
+   transition: all 0.3s ease-in-out;
+   z-index: 3;
+}
+ header nav ul {
+	 list-style-type: none;
+	 padding: 0;
+	 margin: 0;
+	 position: absolute;
+	 left: 50%;
+	 top: 170px;
+	 transition: all 0.3s ease-in-out;
+	 transform: translateX(-50%);
+}
+ header nav ul li {
+	 transform: translateY(50px);
+	 opacity: 0;
+}
+ header nav ul li a {
+	 display: block;
+	 font-size: 2em;
+	 text-decoration: none;
+	 padding: 10px 0;
+	 text-align: center;
+	 color: black;
+	 font-weight: bold;
+	 transition: all 0.2s ease-in-out;
+	 text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+ header nav ul li a:hover {
+	 color: black;
+}
+ .toggle-btn {
+	 display: block;
+	 position: fixed;
+	 z-index: 10;
+	 right: 10px;
+	 top: 10px;
+	 cursor: pointer;
+}
+ .toggle-btn .bar {
+	 width: 30px;
+	 height: 2px;
+	 margin: 7px auto;
+	 background-color: #fff;
+	 transition: all 0.3s ease-in-out;
+	 box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
+}
+ .toggle-btn .bar:nth-child(2) {
+	 width: 20px;
+}
+ #toggle:checked ~ nav {
+	 opacity: 1;
+	 visibility: visible;
+}
+ #toggle:checked ~ nav ul {
+	 top: 70px;
+}
+ #toggle:checked ~ nav ul li {
+	 transform: translateY(0px);
+	 opacity: 1;
+}
+ #toggle:checked ~ nav ul li:nth-child(1) {
+	 transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
+}
+ #toggle:checked ~ nav ul li:nth-child(2) {
+	 transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
+}
+ #toggle:checked ~ nav ul li:nth-child(3) {
+	 transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
+}
+ #toggle:checked ~ nav ul li:nth-child(4) {
+	 transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
+}
+ #toggle:checked + label.toggle-btn .bar {
+	 background-color: black;
+}
+ #toggle:checked + label.toggle-btn .bar:nth-child(2) {
+	 transform: translateX(50px);
+	 opacity: 0;
+}
+ #toggle:checked + label.toggle-btn .bar:nth-child(1) {
+	 transform: translateY(10px) rotate(45deg);
+}
+ #toggle:checked + label.toggle-btn .bar:nth-child(3) {
+	 transform: translateY(-8px) rotate(-45deg);
+}
+ 
+/* title */
+
+.main-back img {
+  width: 40%;
+}
+.megha-back {
+  display: flex;
+  margin-top: 0;
+}
+.hello {
+  margin: 0;
+  width: 40%;
+  color: grey;
+  margin-top: 20%;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* background */
+
+.web-back img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.subtitle {
+  color: white;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.para{
+  width: 80%;
+  margin-top: 9%;
+  font-size: 17px;
+  padding-left: 2%;
+}
+
+.subtitle2 {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 7%;
+}
+
+.up-to  {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  }
+.up-to p {
+  font-size: 20px;
+  text-align: center;
+}
+.work-current {
+  margin-top: 15%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.work-current h4 {
+  font-size: 35px;
+  width: 50%;
+  text-align: center;
+}
+.box-1 {
+width: 50%;
+padding: 4%;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255,255,255, 0.5);
+  padding-top: 3%;
+  border-radius: 10%;
+}
+.square h6 {
+  font-size: 20px;
+  margin: 2%;
+}
+.square p {
+  font-size: 16px;
+  padding: 3%;
+  line-height: 1.5;
+}
+
+.work-current2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 5%;
+}
+.work-current2 h4 {
+  font-size: 35px;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 14%;
+}
+.box-2 {
+width: 50%;
+padding: 4%;
+}
+.proud {
+  margin-top: 15%;
+}
+.projects {
+  padding: 2%;
+  text-align: center;
+}
+.projects img {
+  width: 400px;
+  margin: 2%;
+}
+
+
+.out-side-work {
+  background-color: black;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+.interests {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music {
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin: 4%;
+}
+.music h4 {
+  text-align: center;
+  font-size: 20px;
+}
+.customer-service {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  color: grey;
+}
+.dss {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 7%;
+}
+.dss img {
+  width: 400px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+.details {
+  width: 50%;
+  padding: 5%;
+  text-align: center;
+}
+.details p {
+  font-size: 20px;
+}
+.contact-form {
+  width: 50%;
+  display: block;
+  padding: 5%;
+}
+form {
+  width: 60%;
+}
+form input {
+  width: 100%;
+  margin: 3%;
+  padding: 5%;
+}
+form button {
+  margin: 3%;
+  padding: 4%;
+  background-color: black;
+  color: grey;
+  border: none;
+}
+
+/* like button */
+
+#main-content {
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  color: #888;
+}
+a {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #008a68;
+}
+svg {
+  cursor: pointer;
+  overflow: visible;
+  width: 60px;
+}
+svg #heart {
+  transform-origin: center;
+  animation: animateHeartOut 0.3s linear forwards;
+}
+svg #main-circ {
+  transform-origin: 29.5px 29.5px;
+}
+#checkbox {
+  display: none;
+}
+#checkbox:checked + label svg #heart {
+  transform: scale(0.2);
+  fill: #e2264d;
+  animation: animateHeart 0.3s linear forwards 0.25s;
+}
+#checkbox:checked + label svg #main-circ {
+  transition: all 2s;
+  animation: animateCircle 0.3s linear forwards;
+  opacity: 1;
+}
+#checkbox:checked + label svg #grp1 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp1 #oval1 {
+  transform: scale(0) translate(0, -30px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp1 #oval2 {
+  transform: scale(0) translate(10px, -50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp2 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp2 #oval1 {
+  transform: scale(0) translate(30px, -15px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp2 #oval2 {
+  transform: scale(0) translate(60px, -15px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp3 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp3 #oval1 {
+  transform: scale(0) translate(30px, 0px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp3 #oval2 {
+  transform: scale(0) translate(60px, 10px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp4 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp4 #oval1 {
+  transform: scale(0) translate(30px, 15px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp4 #oval2 {
+  transform: scale(0) translate(40px, 50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp5 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp5 #oval1 {
+  transform: scale(0) translate(-10px, 20px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp5 #oval2 {
+  transform: scale(0) translate(-60px, 30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp6 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp6 #oval1 {
+  transform: scale(0) translate(-30px, 0px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp6 #oval2 {
+  transform: scale(0) translate(-60px, -5px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp7 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp7 #oval1 {
+  transform: scale(0) translate(-30px, -15px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp7 #oval2 {
+  transform: scale(0) translate(-55px, -30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp2 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp3 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp4 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp5 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp6 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp7 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+@keyframes animateCircle {
+  40% {
+    transform: scale(10);
+    opacity: 1;
+    fill: #dd4688;
+ }
+  55% {
+    transform: scale(11);
+    opacity: 1;
+    fill: #d46abf;
+ }
+  65% {
+    transform: scale(12);
+    opacity: 1;
+    fill: #cc8ef5;
+ }
+  75% {
+    transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.5;
+ }
+  85% {
+    transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.2;
+ }
+  95% {
+    transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.1;
+ }
+  100% {
+    transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0;
+ }
+}
+@keyframes animateHeart {
+  0% {
+    transform: scale(0.2);
+ }
+  40% {
+    transform: scale(1.2);
+ }
+  100% {
+    transform: scale(1);
+ }
+}
+@keyframes animateHeartOut {
+  0% {
+    transform: scale(1.4);
+ }
+  100% {
+    transform: scale(1);
+ }
+}
