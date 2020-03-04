@@ -2,13 +2,14 @@ body {
   background-color: black;
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
 
 
  header nav {
-	 background-color: #9B9B9B;
+	 background-color: rgb(105, 97, 44);
 	 position: fixed;
 	 top: 0;
 	 left: 0;
@@ -122,7 +123,12 @@ body {
   text-align: center;
   font-size: 30px;
 }
-
+.hello p a {
+  margin: 0;
+  color: #FFD80E;
+  text-align: center;
+  font-size: 25px;
+}
 /* background */
 .web-back {
   margin: 0;
@@ -142,7 +148,7 @@ body {
 .para{
   width: 80%;
   margin-top: 9%;
-  font-size: 17px;
+  font-size: 20px;
   padding-left: 2%;
 }
 
@@ -177,20 +183,7 @@ body {
   align-items: center;
   
 }
-.svg-wok{
- background-color: red;
- width: 100%;
- height: 800px;
- overflow-y: hidden;
- overflow-x: scroll;
- flex-wrap: nowrap;
-}
-#svg {
-  position: fixed;
-  top: 10%;
-  width: 150px;
-  height: 150px;
-}
+
 .work-current h4 {
   font-size: 35px;
   width: 50%;
@@ -254,11 +247,76 @@ padding: 4%;
   line-height: 1.5;
 }
 
+/* ScrollMagic start */
+
+#process {
+  background: transparent;
+  background-size: 100% auto;
+  position: relative;
+  height: 100vh;
+  width: 300%;
+}
+#process .wrap {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+svg {
+  height: 100%;
+}
+
+.time {
+  fill: none;
+  stroke: black;
+  stroke-dasharray: 4700;
+  stroke-dashoffset: 4700;
+}
+.step {
+  
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+
+.line {
+  fill: #f04931;
+  stroke: #01bbea;
+  stroke-width: 4px;
+  stroke-miterlimit: 10;
+}
+.dot {
+  fill: #01bbea;
+  visibility: hidden;
+}
+.horz {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0%;
+  bottom: 0;
+}
+
+/* ScrollMagic Finished */
+
+
+
+
+
+
+
+
+
 
 .proud {
   margin-top: 15%;
 }
-.projects {
+/* .projects {
   padding: 2%;
   text-align: center;
 }
@@ -266,7 +324,7 @@ padding: 4%;
   width: 400px;
   margin: 2%;
 }
-
+ */
 
 .out-side-work {
   background-color: black;
@@ -275,39 +333,155 @@ padding: 4%;
 }
 .interests {
   display: flex;
-  width: 60%;
   margin-left: auto;
   margin-right: auto;
+  width: 40%;
 }
 
 .music {
   width: 200px;
   height: 200px;
-  background-color: #f2f2f2;
+  background-image: url("/images/music.jpg");
+  background-size: cover;
+  background-position: center;
   margin: 4%;
 }
-.music h4 {
+.photography {
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/photography.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 4%;
+}
+.tech {
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/tech2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 4%;
+}
+
+.music h4, .photography h4, .tech h4 {
   text-align: center;
+  margin-top: 85%;
   font-size: 20px;
+  background-color: black;
+  color: white;
+  padding: 3%;
+  font-weight: 200;
 }
 .customer-service {
   padding-left: 15%;
   padding-right: 15%;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.6;
   color: grey;
 }
 .dss {
-  margin: 0;
+  width: 500px;
+  padding: 2%;
+	font-size: 0;
   margin-left: auto;
   margin-right: auto;
+	
+}
+.projects {
+  width: 45%;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projects img {
   width: 400px;
-  margin-top: 7%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .dss img {
-  width: 400px;
+  width: 500px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
+ .tile{
+  display: inline-block;
+		margin: 10px;
+		text-align: left;
+		opacity: .99;
+		overflow: hidden;
+		position: relative;
+		border-radius: 3px;
+		box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+}
+ .tile::before{
+  content: '';
+			background: linear-gradient(
+				to bottom,
+				rgba(0,0,0,0) 0%,
+				rgba(0,0,0,1) 100%
+			);
+			width: 100%;
+			height: 50%;
+			opacity: 0;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 2;
+			transition-property: top, opacity;
+			transition-duration: 0.3s;
+}
+ .tile .details{
+  font-size: 16px;
+			/* padding: 20px; */
+			color: #fff;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 3;
+}
+ .tile .details span {
+  display: block;
+				opacity: 0;
+				position: relative;
+				top: 100px;
+				transition-property: top, opacity;
+				transition-duration: 0.3s;
+				transition-delay: 0s;
+}
+ .tile .details .title {
+  line-height: 1;
+  text-align: left;
+				font-size: 18px;
+} 
+ .tile .details .info {
+  line-height: 1.2;
+  text-align: left;
+				margin-top: 5px;
+				font-size: 12px;
+}
+.tile:focus::before,  .tile:hover::before,  .tile:focus span,  .tile:hover span {
+  opacity: 1;
+}
+
+.tile:focus::before,.tile:hover::before {
+  top: 50%;
+}
+
+ .tile:focus span, .tile:hover span {
+  top: 0;
+}
+.tile:focus .title , .tile:hover .title {
+  transition-delay: 0.15s;
+}
+
+.tile:focus .info, .tile:hover .info {
+  transition-delay: 0.25s;
+}
+
+
+
+
 
 .contact {
   display: flex;
@@ -367,11 +541,11 @@ a {
   text-decoration: none;
   color: #008a68;
 }
-svg {
+/* svg {
   cursor: pointer;
   overflow: visible;
   width: 60px;
-}
+} */
 svg #heart {
   transform-origin: center;
   animation: animateHeartOut 0.3s linear forwards;
@@ -577,4 +751,21 @@ svg #main-circ {
   100% {
     transform: scale(1);
  }
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
