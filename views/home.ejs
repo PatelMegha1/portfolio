@@ -7,6 +7,9 @@
     <title>Megha Patel</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="/javascripts/nav.js"></script>
+    <script src="/javascripts/scroll.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- aos library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -47,12 +50,14 @@
       </label>
       <nav>
         <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">WORK</a></li>
-          <li><a href="#">CONTACT ME </a></li>
+          <li><a href="#about" data-target="about">ABOUT</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#contact">CONTACT ME </a></li>
         </ul>
       </nav>
     </header>
+
+
     <div class="main-back">
       <div class="megha-back" id="top-image">
     <img src="/images/megha1.png" alt="">
@@ -98,11 +103,11 @@
 
 
 <div class="web-back" id="web-back">
-  <img src="/images/back-6.png" alt="">
+  <img src="/images/back-7.png" alt="">
 </div>
 
 
-<h3 class="subtitle" data-aos="fade-up" data-aos-duration="3000"> WHO ?</h3>
+<h3 class="subtitle" data-aos="fade-up" data-aos-duration="3000" id="about"> WHO ?</h3>
 <div class="para">
 <p data-aos="fade-up" data-aos-duration="3000"> 
   Designer that codes based in Toronto, ON, Canada. 
@@ -110,24 +115,45 @@ I grew up in India.</p><p data-aos="fade-up" data-aos-duration="3000" data-aos-d
 in Georgian College, Barrie, ON, Canada. </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400"> I love working on 
 projects that require multidisciplinary skill sets solving complex problems 
 and </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600"> make lives of people easy.  In my course I had two Co-ops. For the first Co-op
- I have worked for a non-profit organization </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="800">as a Web-designer & Graphic Designer. 
+ I have worked for a non-profit  </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="800">organization as a Web-designer & Graphic Designer. 
 And for the second Co-op I have worked as Web Developer for DSS Toronto,
 where </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000"> I am still working as Full-Timer. I am specialized in Design and coding. 
-I have extensive experience in visual and interaction design, Design </p> <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1200"> system. I am a 
- Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript 
-and jQuery. 
+I have extensive experience in visual and interaction design, </p> <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1200"> Design system. I am a 
+ Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
 </p><p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
 </div>
 
+
+<!-- mobile para -->
+<div class="para-mobile" id="about">
+  <p data-aos="fade-up" data-aos-duration="3000"> 
+    Designer that codes based in Toronto, ON, Canada. 
+  I grew up in India. And studied Computer Programmer course
+  in Georgian College, Barrie, ON, Canada. I love working on 
+  projects that require multidisciplinary skill sets solving complex problems 
+  and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+   I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+  And for the second Co-op I have worked as Web Developer for DSS Toronto,
+  where  I am still working as Full-Timer. I am specialized in Design and coding. 
+  I have extensive experience in visual and interaction design,  Design system. I am a 
+   Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+  I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+  </div>
+<!-- mobile para finished -->
+
+
+<div class="desktop" id="work">
 <!--  horizontal box -->
 <div id="main">
 <div id="process-wrap">
 <div id="process" class="horizontal-container">
   <section class="horz">
       <div class="wrap">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5321.96 736.46" id="timelinesvg">
-            <text class="step step-01" transform="translate(90 192.72)" >
-             <tspan style="font-size: 30px; padding-left: 30%"> WHAT I'M UP TO ?</tspan>
+        <!-- viewBox="0 0 5321.96 736.46" -->
+          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 5921.96 736.46" id="timelinesvg" >
+           
+            <text class="step step-01" transform="translate(250 227.72)" >
+             <tspan> WHAT I'M UP TO ?</tspan>
             </text>
             <!-- <rect class="step step-02" x="150" width="150" height="150" rx="15" transform="translate(692.33 340.72)" color="white" >
             <text> Ceating Beautiful Websites
@@ -146,8 +172,8 @@ and jQuery.
               </tspan>
             </text>
             <g>
-              <rect  class="step step-04" transform="translate(1952.1 396.72)" width="490" height="400"  rx="35" fill="#D9BC00"></rect>
-              <text class="step step-04" transform="translate(1952.1 396.72)" font-family="Verdana"  fill="black">
+              <rect  class="step step-04" transform="translate(1952.1 376.72)" width="490" height="400"  rx="35" fill="#D9BC00"></rect>
+              <text class="step step-04" transform="translate(1952.1 376.72)" font-family="Verdana"  fill="black">
               <tspan x="150" y="-15" font="bold 25px">WEB DEVELOPER</tspan>
               <tspan x="10" y="50" font-size="15" > &#10084; Working on Node-Express.js javascript framework. </tspan>
               <tspan x="10" y="80" font-size="15"> &#10084; Creating static websites which are working well  with all</tspan>
@@ -167,9 +193,9 @@ and jQuery.
             <text class="step step-06" transform="translate(3042.1 245.72)">Graphic designing</text>
             <text class="step step-07" transform="translate(3883.88 190.72)">Previously I was doing...</text>
             <g>
-              <rect  class="step step-08" transform="translate(4480.1 372.72)" width="490" height="430"  rx="35" fill="#D9BC00"></rect>
-              <text class="step step-08" transform="translate(4480.1 372.72)" font-family="Verdana"  fill="black">
-              <tspan x="90" y="-15" font="bold 25px">WEB & GRAPHIC DESIGNER </tspan>
+              <rect  class="step step-08" transform="translate(4480.1 322.72)" width="490" height="430"  rx="35" fill="#D9BC00"></rect>
+              <text class="step step-08" transform="translate(4480.1 322.72)" font-family="Verdana"  fill="black">
+              <tspan x="90" y="-90" font="bold 25px">WEB & GRAPHIC DESIGNER </tspan>
                 <tspan x="10" y="50" font-size="15"> &#10084; Designing logos, flyers and banners for social events  </tspan>
                 <tspan x="10" y="80" font-size="15"> and programmes. </tspan>
               <tspan x="10" y="110" font-size="15"> &#10084; Working on Websites, adding new features on hosted </tspan>
@@ -190,17 +216,19 @@ and jQuery.
             <text class="step step-09" transform="translate(5105.81 192.72)">TADA ..!!!</text>
 
             <path class="time" stroke-linecap="round" stroke-width="24px" stroke-miterlimit="10" d="M655,527.31s322.07-25.41,533.19,93.83c71.79,40.55,172.58,86.68,266.25,112.56,18,5,103.06,30,210.7,21.67,151.82-11.73,329.71-90.74,383.13-117.12,144-71.08,340.79-73.54,461.33-75.1,85.24-1.1,267.8-.65,477.6-112.72S3531.93,302.31,3773,492.78s521.92,227.4,799.49,92.52,520-63.85,520-63.85" transform="translate(-200.6 -342.53)"/>
-
-
+            
+        
           </svg>
       </div>
   </section>
   </div></div>
 </div>
+
+
+
 <script>
 // Init ScrollMagic
 var controller = new ScrollMagic.Controller();
-
 // GSAP Timline vars
 var horzTl = new TimelineMax();
 var processTl = new TimelineMax();
@@ -235,6 +263,7 @@ var talkScene = new ScrollMagic.Scene({
 // .addIndicators()
 .addTo(controller);
 
+
 // Set timeline objects
 horzTl
   //side scrolling
@@ -257,58 +286,67 @@ processTl
 ;
 ;
 </script>
-
+</div>
     <!-- horizontal box finished -->
 
+<!-- mobile scrolling finished -->
 
 
 
 
 
+<div class="project-back">
 
 
     <h3 class="subtitle2 proud" data-aos="fade-up" data-aos-duration="3000">PROJECTS, I'M PROUD OF</h3>
-    <div class="dss">
-      <div class="tile">
-        <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" src="/images/job5.png" alt="">
-        <div class="details">
-          <span class="title">DSS Toronto</span>
-          <span class="info">Quisque vel felis lectus donec vitae dapibus magna </span>
-        </div>
+    <div class="projects">
+              <div class="tile">
+                <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" src="/images/job5.png" alt="">
+                <div class="details">
+                  <span class="title">DSS Toronto</span>
+                  <span class="info">Website made with MERN stack. Responsive and dynamic, user authentication by node and its libraries with full security.  </span>
+                </div>
+            </div>
+            <div class="tile">
+              <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" src="/images/tournament.png" alt="">
+              <div class="details">
+                <span class="title">Tournament Web</span>
+                <span class="info"> This project was made by nodeJS-ExpressJs javascript framework, using jade as frontend.  </span>
+              </div>
+          </div>
     </div>
-  </div>
     <div class="projects">
         <div class="tile">
           <img data-aos="fade-right" data-aos-duration="3000"  data-aos-delay="300" src="/images/job1.jpg" alt="">
           <div class="details">
-            <span class="title">DSS Toronto</span>
-            <span class="info">Quisque vel felis lectus donec vitae dapibus magna </span>
+            <span class="title">Job fair</span>
+            <span class="info">This project is a part of my first Co-op. Designed flyers, banners and social media marketing plus email template designed.</span>
           </div>
         </div> 
         <div class="tile">
           <img data-aos="fade-left" data-aos-duration="3000"  data-aos-delay="600" src="/images/job2.jpg" alt=""  >
           <div class="details">
-            <span class="title">DSS Toronto</span>
-            <span class="info">Quisque vel felis lectus donec vitae dapibus magna </span>
+            <span class="title">Interfaith dialogue </span>
+            <span class="info"> This project was social event  agianst violence, During my first Co-op i participated in this event. Designed website using WordPress and all the flyers and banners made from canvas and Adobe CC. </span>
           </div>
         </div>
         <div class="tile">
           <img data-aos="fade-right" data-aos-duration="3000"  data-aos-delay="900" src="/images/job3.png" alt="">
           <div class="details">
-            <span class="title">DSS Toronto</span>
-            <span class="info">Quisque vel felis lectus donec vitae dapibus magna </span>
+            <span class="title">Everything's Store</span>
+            <span class="info"> This was a project from my college. Website was created with ASP.net and bootstrap for front end. The concept was same as amazon.  </span>
           </div>
         </div>
         <div class="tile">
           <img data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1200" src="/images/job4.jpg" alt="">
           <div class="details">
-            <span class="title">DSS Toronto</span>
-            <span class="info">Quisque vel felis lectus donec vitae dapibus magna </span>
+            <span class="title">Shopping App</span>
+            <span class="info"> Shopping IOS app, developed with swift language on Xcode. </span>
           </div>
         </div>
     </div>
 
-
+</div>
 
 <div class="out-side-work">
 <h3 class="subtitle2" style="color: grey;">OUTSIDE OF WORK</h3>
@@ -329,83 +367,26 @@ processTl
         I am also working at Loblaws as Team member in café as part timer. 
         That is great job because I like customer service and I love coffee. 
         I am also awarded as best employee of the year.</p>
-        <img src="/images/parttime.png" alt="" style="width: 600px;">
+        <img src="/images/parttime.png" alt="">
     </div>
   </div>
-  <h3 class="subtitle2">CONTACT ME</h3>
+  <h3 class="subtitle3" id="contact">CONTACT ME</h3>
   <div class="contact">
-      <div class="details">
-        <p>711 Finch Ave West, Toronto, ON, Canada</p>
-        <p>meghapatel1903@gmail.com</p>
+      <div class="detail">
+        <p><i class="fa fa-home"></i>
+          711 Finch Ave West, Toronto, ON, Canada</p>
+          <a href="mailto:meghapatel1903@gmail.com?Subject=Hello%20again" target="_top">
+          <p>
+          <i class="fa fa-envelope"></i> 
+          meghapatel1903@gmail.com
+        </p>
+      </a>
       </div>
       <div class="contact-form">
-        <h3>Contact Form</h3>
-        <form action="">
-          <input type="text" placeholder="Your Lucky Name">
-          <input type="email" placeholder="Your Email">
-          <input type="text" placeholder="Your Message!!">
-          <button>SEND !</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.1422238228015!2d-79.46367878427422!3d43.76990645289361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2dfad1196095%3A0x7e0fe0520d8219e0!2s711%20Finch%20Ave%20W%2C%20Toronto%2C%20ON%20M3H%204X6!5e0!3m2!1sen!2sca!4v1583512326099!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </form>
       </div>
 </div>
 
-<!-- like button  -->
-<div id="main-content">
-  <h4 style="color: white;"> I </h4>
-
-  <div>
-    <input type="checkbox" id="checkbox" />
-    <label for="checkbox">
-      <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-          <path d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" id="heart" fill="#AAB8C2"/>
-          <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
-
-          <g id="grp7" opacity="0" transform="translate(7 6)">
-            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
-            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
-          </g>
-
-          <g id="grp6" opacity="0" transform="translate(0 28)">
-            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
-            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
-          </g>
-
-          <g id="grp3" opacity="0" transform="translate(52 28)">
-            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
-            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
-          </g>
-
-          <g id="grp2" opacity="0" transform="translate(44 6)">
-            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
-            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
-          </g>
-
-          <g id="grp5" opacity="0" transform="translate(14 50)">
-            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
-            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
-          </g>
-
-          <g id="grp4" opacity="0" transform="translate(35 50)">
-            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
-            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
-          </g>
-
-          <g id="grp1" opacity="0" transform="translate(24)">
-            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
-            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
-          </g>
-        </g>
-      </svg>
-    </label>
-  </div>
-  <h4 style="color: white;"> This Website ! </h4>
-  <h4 class="count" style="color: white;"> </h4>
-<script>
-  $('#checkbox').click(function() {
-    $('.count').html(function(i, val) { return val*1+1 });
-});
-</script>
-</div>
 </body>
 </html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+body {
+    background: #f1f1f1;
+    /* height: 5000px; */
+    width:auto;
+    overflow-x: hidden;
+}
+
+#process {
+  background: transparent;
+  background-size: 100% auto;
+  position: relative;
+  height: 100vh;
+  width: 10000px;
+  overflow-x: hidden ;
+}
+#process .wrap {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden ;
+
+}
+svg {
+  height: 100%;
+}
+
+.time {
+  fill: none;
+  stroke: black;
+  stroke-dasharray: 4700;
+  stroke-dashoffset: 4700;
+}
+.step {
+  
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+
+.line {
+  fill: #f04931;
+  stroke: #01bbea;
+  stroke-width: 2px;
+  stroke-miterlimit: 10;
+}
+.dot {
+  fill: #01bbea;
+  visibility: hidden;
+}
+.horz {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0%;
+  bottom: 0;
+}
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+</head>
+<body>
+	<div class="para-mobile">
+  <p data-aos="fade-up" data-aos-duration="3000"> 
+    Designer that codes based in Toronto, ON, Canada. 
+  I grew up in India. And studied Computer Programmer course
+  in Georgian College, Barrie, ON, Canada. I love working on 
+  projects that require multidisciplinary skill sets solving complex problems 
+  and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+   I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+  And for the second Co-op I have worked as Web Developer for DSS Toronto,
+  where  I am still working as Full-Timer. I am specialized in Design and coding. 
+  I have extensive experience in visual and interaction design,  Design system. I am a 
+   Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+  I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+  </div>
+  <div class="para-mobile">
+  <p data-aos="fade-up" data-aos-duration="3000"> 
+    Designer that codes based in Toronto, ON, Canada. 
+  I grew up in India. And studied Computer Programmer course
+  in Georgian College, Barrie, ON, Canada. I love working on 
+  projects that require multidisciplinary skill sets solving complex problems 
+  and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+   I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+  And for the second Co-op I have worked as Web Developer for DSS Toronto,
+  where  I am still working as Full-Timer. I am specialized in Design and coding. 
+  I have extensive experience in visual and interaction design,  Design system. I am a 
+   Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+  I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+  </div>
+
+  <div class="para-mobile">
+    <p data-aos="fade-up" data-aos-duration="3000"> 
+      Designer that codes based in Toronto, ON, Canada. 
+    I grew up in India. And studied Computer Programmer course
+    in Georgian College, Barrie, ON, Canada. I love working on 
+    projects that require multidisciplinary skill sets solving complex problems 
+    and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+     I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+    And for the second Co-op I have worked as Web Developer for DSS Toronto,
+    where  I am still working as Full-Timer. I am specialized in Design and coding. 
+    I have extensive experience in visual and interaction design,  Design system. I am a 
+     Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+    I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+    </div>
+  
+  
+    <div class="para-mobile">
+      <p data-aos="fade-up" data-aos-duration="3000"> 
+        Designer that codes based in Toronto, ON, Canada. 
+      I grew up in India. And studied Computer Programmer course
+      in Georgian College, Barrie, ON, Canada. I love working on 
+      projects that require multidisciplinary skill sets solving complex problems 
+      and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+       I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+      And for the second Co-op I have worked as Web Developer for DSS Toronto,
+      where  I am still working as Full-Timer. I am specialized in Design and coding. 
+      I have extensive experience in visual and interaction design,  Design system. I am a 
+       Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+      I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+      </div>
+    
+    
+      <div class="para-mobile">
+        <p data-aos="fade-up" data-aos-duration="3000"> 
+          Designer that codes based in Toronto, ON, Canada. 
+        I grew up in India. And studied Computer Programmer course
+        in Georgian College, Barrie, ON, Canada. I love working on 
+        projects that require multidisciplinary skill sets solving complex problems 
+        and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+         I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+        And for the second Co-op I have worked as Web Developer for DSS Toronto,
+        where  I am still working as Full-Timer. I am specialized in Design and coding. 
+        I have extensive experience in visual and interaction design,  Design system. I am a 
+         Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+        I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+        </div>
+      
+      
+        <div class="para-mobile">
+          <p data-aos="fade-up" data-aos-duration="3000"> 
+            Designer that codes based in Toronto, ON, Canada. 
+          I grew up in India. And studied Computer Programmer course
+          in Georgian College, Barrie, ON, Canada. I love working on 
+          projects that require multidisciplinary skill sets solving complex problems 
+          and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+           I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+          And for the second Co-op I have worked as Web Developer for DSS Toronto,
+          where  I am still working as Full-Timer. I am specialized in Design and coding. 
+          I have extensive experience in visual and interaction design,  Design system. I am a 
+           Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+          I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+          </div>
+        
+        
+          <div class="para-mobile">
+            <p data-aos="fade-up" data-aos-duration="3000"> 
+              Designer that codes based in Toronto, ON, Canada. 
+            I grew up in India. And studied Computer Programmer course
+            in Georgian College, Barrie, ON, Canada. I love working on 
+            projects that require multidisciplinary skill sets solving complex problems 
+            and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+             I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+            And for the second Co-op I have worked as Web Developer for DSS Toronto,
+            where  I am still working as Full-Timer. I am specialized in Design and coding. 
+            I have extensive experience in visual and interaction design,  Design system. I am a 
+             Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+            I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+            </div>
+        
+            <div class="para-mobile">
+              <p data-aos="fade-up" data-aos-duration="3000"> 
+                Designer that codes based in Toronto, ON, Canada. 
+              I grew up in India. And studied Computer Programmer course
+              in Georgian College, Barrie, ON, Canada. I love working on 
+              projects that require multidisciplinary skill sets solving complex problems 
+              and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+               I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+              And for the second Co-op I have worked as Web Developer for DSS Toronto,
+              where  I am still working as Full-Timer. I am specialized in Design and coding. 
+              I have extensive experience in visual and interaction design,  Design system. I am a 
+               Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+              I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+              </div>
+              
+                    
+
+
+
+
+
+              <div id="main">
+                <div id="process-wrap">
+                <div id="process" class="horizontal-container">
+                  <section class="horz">
+                      <div class="wrap">
+                        <!-- viewBox="0 0 5321.96 736.46" -->
+                          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 6621.96 736.46" id="timelinesvg" >
+                           
+                            <text class="step step-01" transform="translate(250 227.72)" >
+                             <tspan font-size="35"> WHAT I'M UP TO ?</tspan>
+                            </text>
+                            <!-- <rect class="step step-02" x="150" width="150" height="150" rx="15" transform="translate(692.33 340.72)" color="white" >
+                            <text> Ceating Beautiful Websites
+                              Innovation of new Graphics
+                            </text>
+                            </rect> -->
+                            <text x="60" y="20" class="step step-02" transform="translate(692.33 340.72)" rotate="10">
+                              <tspan x="10" y="45" font-size="30">Ceating Beautiful Websites</tspan>
+                              <tspan x="10" y="90" font-size="30">Innovation of new Graphics</tspan>   
+                              <tspan x="10" y="135" font-size="30"> Learn new modern Technologies</tspan> 
+                              <tspan x="10" y="180" font-size="30">Travel</tspan> 
+                            </text>
+                            <text class="step step-03" transform="translate(1330.24 295.72)">
+                              <tspan fill="#383101" font-size="30">
+                              Currently I'm Doing...
+                              </tspan>
+                            </text>
+                            <g>
+                              <rect  class="step step-04" transform="translate(1952.1 376.72)" width="490" height="400"  rx="35" fill="#D9BC00"></rect>
+                              <text class="step step-04" transform="translate(1952.1 376.72)" font-family="Verdana"  fill="black">
+                              <tspan x="150" y="-15" font="bold 25px">WEB DEVELOPER</tspan>
+                              <tspan x="10" y="50" font-size="15" > &#10084; Working on Node-Express.js javascript framework. </tspan>
+                              <tspan x="10" y="80" font-size="15"> &#10084; Creating static websites which are working well  with all</tspan>
+                              <tspan x="10" y="110" font-size="15">  size devices and all browsers with google analytics and </tspan>
+                                <tspan x="10" y="140" font-size="15"> great SEO content.  </tspan>
+                                <tspan x="10" y="170" font-size="15">&#10084; Hands-on experience working with HTML, CSS, jQuery, </tspan>
+                                <tspan x="10" y="200" font-size="15">JavaScript, PHP, JAVA.</tspan>
+                                <tspan x="10" y="230" font-size="15"> &#10084; Database Management: Managing and manipulating data </tspan>
+                                <tspan x="10" y="260" font-size="15"> using MYSQL, writing SQL Statement.</tspan>
+                                  <tspan x="10" y="290" font-size="15"> &#10084; Fixing bugs and troubleshooting problems on  going website. </tspan>
+                                      <tspan x="10" y="320" font-size="15"> &#10084; Creating creative graphics using Photoshop, illustrator,  </tspan>
+                                        <tspan x="10" y="350" font-size="15">   XD, After Effect and many other Adobe software. </tspan>
+                              </text>
+                            </g>
+                            <!-- <text class="step step-04" transform="translate(1952.1 396.72)">Client Approval</text> -->
+                            <text class="step step-05" transform="translate(2630.96 42.72)">Design</text>
+                            <text class="step step-06" transform="translate(3042.1 245.72)">Graphic designing</text>
+                            <text class="step step-07" transform="translate(3883.88 190.72)">Previously I was doing...</text>
+                            <g>
+                              <rect  class="step step-08" transform="translate(4480.1 322.72)" width="490" height="430"  rx="35" fill="#D9BC00"></rect>
+                              <text class="step step-08" transform="translate(4480.1 322.72)" font-family="Verdana"  fill="black">
+                              <tspan x="90" y="-90" font="bold 25px">WEB & GRAPHIC DESIGNER </tspan>
+                                <tspan x="10" y="50" font-size="15"> &#10084; Designing logos, flyers and banners for social events  </tspan>
+                                <tspan x="10" y="80" font-size="15"> and programmes. </tspan>
+                              <tspan x="10" y="110" font-size="15"> &#10084; Working on Websites, adding new features on hosted </tspan>
+                                <tspan x="10" y="140" font-size="15">   websites using WordPress and its amazing plugins.   </tspan>
+                                  <tspan x="10" y="170" font-size="15">&#10084; Participated in many social events, oragnized all the </tspan>
+                                  <tspan x="10" y="200" font-size="15">programmes and manage the activities.</tspan>
+                                    <tspan x="10" y="230" font-size="15"> &#10084; Learned exceptional verbal and non-verbal communication</tspan>
+                                      <tspan x="10" y="260" font-size="15"> skills, excellent time- management skills </tspan>
+                                      <tspan x="10" y="290" font-size="15"> &#10084; Project management skill, manage projects and team work   </tspan>
+                                      <tspan x="10" y="320" font-size="15"> using JIRA software.</tspan>
+                                        <tspan x="10" y="350" font-size="15"> &#10084;  Skilled in analyzing complex situations, and Effective</tspan>
+                                          <tspan x="10" y="380" font-size="15">  leadership qualities utilized to motivate and guide  </tspan>
+                                          <tspan x="10" y="410" font-size="15">  &#10084; Implement new features and improve current features. </tspan>
+                              </text>
+                            </g>
+                
+                            <!-- <text class="step step-08" transform="translate(4480.1 372.72)">Client Approval</text> -->
+                            <text class="step step-09" transform="translate(5105.81 192.72)">TADA ..!!!</text>
+                
+                            <path class="time" stroke-linecap="round" stroke-width="4px" stroke-miterlimit="10" d="M655,527.31s322.07-25.41,533.19,93.83c71.79,40.55,172.58,86.68,266.25,112.56,18,5,103.06,30,210.7,21.67,151.82-11.73,329.71-90.74,383.13-117.12,144-71.08,340.79-73.54,461.33-75.1,85.24-1.1,267.8-.65,477.6-112.72S3531.93,302.31,3773,492.78s521.92,227.4,799.49,92.52,520-63.85,520-63.85" transform="translate(-200.6 -342.53)"/>
+                            
+                        
+                          </svg>
+                      </div>
+                  </section>
+                  </div></div>
+                </div>
+                
+                
+                
+                <script>
+                // Init ScrollMagic
+                var controller = new ScrollMagic.Controller();
+                // GSAP Timline vars
+                var horzTl = new TimelineMax();
+                var processTl = new TimelineMax();
+                var talkTl = new TimelineMax();
+                
+                // ScrollMagic scenes
+                // horizontal scrolling scene
+                var horzScene = new ScrollMagic.Scene({
+                    triggerElement: '#process',
+                    triggerHook: 0,
+                    duration: '280%'
+                })
+                .setTween(horzTl)
+                .setPin('#process')
+                .addTo(controller);
+                
+                // process scene
+                var processScene = new ScrollMagic.Scene({
+                    triggerElement: '#process',
+                    triggerHook: 0,
+                    duration: '280%'
+                })
+                .setTween(processTl)
+                .addTo(controller);
+                
+                var talkScene = new ScrollMagic.Scene({
+                    triggerElement: '#talk',
+                    triggerHook:0,
+                  reverse:false
+                })
+                .setTween(talkTl)
+                // .addIndicators()
+                .addTo(controller);
+                
+                
+                // Set timeline objects
+                horzTl
+                  //side scrolling
+                  .to('.horizontal-container', .2, {x: '-70.6666%', ease:Linear.easeNone})
+                ;
+                
+                processTl
+                  // steps
+                  .from('.step-01', .02, {autoAlpha:0}) 
+                  .add('line')
+                  .to('.time', 3, {strokeDashoffset:0, ease:Linear.easeNone}, 'line')  
+                    .from('.step-02', .02, {autoAlpha:0}, 'line+=.15')
+                    .from('.step-03', .02, {autoAlpha:0}, 'line+=.6')
+                    .from('.step-04', .02, {autoAlpha:0}, 'line+=1.07')
+                    .from('.step-05', .02, {autoAlpha:0}, 'line+=1.5')
+                    .from('.step-06', .02, {autoAlpha:0}, 'line+=1.75')
+                    .from('.step-07', .02, {autoAlpha:0}, 'line+=2.33')
+                    .from('.step-08', .02, {autoAlpha:0}, 'line+=2.75')
+                    .from('.step-09', .02, {autoAlpha:0})
+                ;
+                ;
+                </script>
+
+<div class="para-mobile">
+  <p data-aos="fade-up" data-aos-duration="3000"> 
+    Designer that codes based in Toronto, ON, Canada. 
+  I grew up in India. And studied Computer Programmer course
+  in Georgian College, Barrie, ON, Canada. I love working on 
+  projects that require multidisciplinary skill sets solving complex problems 
+  and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+   I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+  And for the second Co-op I have worked as Web Developer for DSS Toronto,
+  where  I am still working as Full-Timer. I am specialized in Design and coding. 
+  I have extensive experience in visual and interaction design,  Design system. I am a 
+   Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+  I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+  </div>
+
+<div class="para-mobile">
+  <p data-aos="fade-up" data-aos-duration="3000"> 
+    Designer that codes based in Toronto, ON, Canada. 
+  I grew up in India. And studied Computer Programmer course
+  in Georgian College, Barrie, ON, Canada. I love working on 
+  projects that require multidisciplinary skill sets solving complex problems 
+  and  make lives of people easy.  In my course I had two Co-ops. For the first Co-op
+   I have worked for a non-profit  organization as a Web-designer & Graphic Designer. 
+  And for the second Co-op I have worked as Web Developer for DSS Toronto,
+  where  I am still working as Full-Timer. I am specialized in Design and coding. 
+  I have extensive experience in visual and interaction design,  Design system. I am a 
+   Front End Developer focusing on modern framework NodeJS-ExpressJs,  React,  HTML  CSS,  JavaScript and jQuery. 
+  I also have experience with databases, I can make queries, solve queries, create databse like mongoDB.</p>
+  </div>
+
+
+</body>
+</html>
