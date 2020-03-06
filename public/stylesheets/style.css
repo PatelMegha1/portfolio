@@ -115,7 +115,7 @@ header nav ul li a:hover {
 /* title */
 
 .main-back img {
-  width: 30%;
+  width: 40%;
   height: auto;
   padding: 5%;
   padding-bottom: 2%;
@@ -698,6 +698,9 @@ svg {
   width: 50%;
   display: block;
   padding: 5%;
+}
+.contact-form  iframe {
+  width: 100%;
 }
 form {
   width: 60%;
