@@ -12,7 +12,7 @@ body {
 
 
  header nav {
-	 background-color: #FFD80E;
+	 background-color: rgba(0,0,0, 0.5);
 	 position: fixed;
 	 top: 0;
 	 left: 0;
@@ -43,7 +43,7 @@ body {
 	 text-decoration: none;
 	 padding: 10px 0;
 	 text-align: center;
-	 color: black;
+	 color: white;
 	 font-weight: bold;
    transition: all 0.2s ease-in-out;
    font-family: 'Josefin Sans', sans-serif;
